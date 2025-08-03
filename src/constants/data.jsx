@@ -31,8 +31,6 @@ import image3 from "../assets/project3.jpeg";
 import image4 from "../assets/project4.jpeg";
 import image5 from "../assets/project5.jpeg";
 import image6 from "../assets/project6.jpeg";
-import image7 from "../assets/project7.jpeg";
-import image8 from "../assets/project8.jpeg";
 
 import user1 from "../assets/profile-pictures/user1.jpg";
 import user2 from "../assets/profile-pictures/user2.jpg";
@@ -128,17 +126,7 @@ export const PROJECTS = [
     title: "Blog Platform",
     subtitle: "A blogging platform developed with Ruby on Rails and PostgreSQL.",
     image: image6,
-  },
-  {
-    title: "Fitness Tracker",
-    subtitle: "A fitness tracking app created using Flutter and Firebase.",
-    image: image7,
-  },
-  {
-    title: "Recipe Finder",
-    subtitle: "A recipe finder application developed with Angular and Node.js.",
-    image: image8,
-  },
+  }
 ];
 
 // Skills

@@ -1,4 +1,3 @@
-import React from 'react'
 import { PROJECTS } from '../constants/data'
 import ProjectCard from '../components/ProjectCard'
 

@@ -4,7 +4,6 @@ import { SOCIAL_MEDIA_LINKS } from "../constants/data";
 const Footer = () => {
   return (
     <div className="mb-8 mt-20">
-      {/* Logo Section */}
       <div className="flex items-center justify-center">
         <figure>
           <img src={logo} alt="logo" width={200} className="mb-2" />
@@ -12,7 +11,6 @@ const Footer = () => {
         </figure>
       </div>
 
-      {/* Social Media Icons */}
       <div className="flex items-center justify-center gap-8">
         {SOCIAL_MEDIA_LINKS.map((link, index) => (
           <a
@@ -26,9 +24,8 @@ const Footer = () => {
         ))}
       </div>
 
-      {/* Copyright Text */}
       <p className="mt-8 text-center text-sm tracking-wide text-gray-400">
-        &copy; compileTab. All rights reserved.
+        &copy;compileTab. All rights reserved.
       </p>
     </div>
   );

@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import logo from "../../assets/logo.png"
-import { NAVIGATION_LINKS } from '../../constants/data';
+import logo from "../assets/logo.png"
+import { NAVIGATION_LINKS } from '../constants/data';
 import { FaBars, FaTimes } from 'react-icons/fa';
 
 const Navbar = () => {
