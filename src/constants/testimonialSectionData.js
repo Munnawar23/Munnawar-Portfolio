@@ -1,30 +1,30 @@
 export const TESTIMONIALS = [
   {
-    name: "Emily Johnson",
-    title: "CEO, Tech Innovators",
+    name: "Shaqeb Ali",
+    title: "Kota, Rajasthan",
     quote:
-      "Working with Munawar has been an incredible experience. His design sensibilities and technical expertise are top-notch, making him a valuable asset to any project.",
-    image: "/images/logo.png",
+      "I hired Munawar for freelance work to build my studio’s website, and his work was spot on. Everything was delivered on time with great attention to detail.",
+    image: "/images/profile-pictures/user-1.webp",
   },
   {
-    name: "Michael Lee",
-    title: "CTO, Creative Minds",
+    name: "Parag Mittal",
+    title: "Pune, Maharashtra",
     quote:
-      "Munawar consistently delivers high-quality work, combining creativity and technical prowess. His ability to solve complex problems with elegant solutions is truly impressive.",
-    image: "/images/profile-pictures/user2.jpg",
+      "I was stuck on a React.js issue for days. Thankfully, Munawar jumped in, understood the problem, and solved it smoothly.",
+    image: "/images/profile-pictures/user-2.webp",
   },
   {
-    name: "Sophia Martinez",
-    title: "Lead Developer, Digital Solutions",
+    name: "Jatin Sharma",
+    title: "Kota, Rajasthan",
     quote:
-      "Munawar's dedication to his craft is evident in every project he undertakes. His innovative approach and attention to detail set him apart as a leading designer and developer.",
-    image: "/images/profile-pictures/user3.jpg",
+      "From frontend to backend, the MERN stack project he delivered was fast, secure, and extremely well structured.",
+    image: "/images/profile-pictures/user-3.webp",
   },
   {
-    name: "Daniel Thompson",
-    title: "Project Manager, InnovateX",
+    name: "Priyanshu",
+    title: "Udaipur, Rajasthan",
     quote:
-      "Munawar's ability to understand client needs and translate them into beautiful, functional designs is remarkable. He is a true professional who always exceeds expectations.",
-    image: "/images/profile-pictures/user4.jpg",
+      "His expertise with Expo and Express.js really shows — the full-stack app he built for me works flawlessly across platforms.",
+    image: "/images/profile-pictures/user-4.webp",
   },
 ];
