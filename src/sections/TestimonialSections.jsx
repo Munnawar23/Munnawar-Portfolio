@@ -1,8 +1,8 @@
-import { TESTIMONIALS } from "../constants/data";
+import { TESTIMONIALS } from "../constants/testimonialSectionData";
 
-const Testimonials = () => {
+const TestimonialSection = () => {
   return (
-    <div id="testimonial" className="container mx-auto mt-20 py-16 tracking-tighter">
+    <div id="testimonials" className="container mx-auto mt-20 py-16 tracking-tighter">
       <h2 className="mb-12 text-center text-4xl font-semibold">
         What People Say
       </h2>
@@ -31,4 +31,4 @@ const Testimonials = () => {
   );
 };
 
-export default Testimonials;
+export default TestimonialSection;

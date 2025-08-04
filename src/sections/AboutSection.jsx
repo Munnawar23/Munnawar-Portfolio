@@ -1,7 +1,6 @@
-import React from 'react'
-import { ABOUT } from '../constants/data'
+import { ABOUT } from '../constants/aboutSectionData'
 
-const About = () => {
+const AboutSection = () => {
   return (
     <div className='container mx-auto' id='about'>
         <h2 className='mt-20 text-center text-4xl font-semibold'>
@@ -17,4 +16,4 @@ const About = () => {
   )
 }
 
-export default About
+export default AboutSection

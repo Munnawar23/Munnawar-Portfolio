@@ -1,4 +1,4 @@
-const ProjectCard = ({image, title, subtitle, link}) => {
+const WorkCard = ({image, title, subtitle, link}) => {
   return (
     <a href={link} className='m-4 block max-w-sm overflow-hidden rounded-lg'>
         <div className="relative">
@@ -12,4 +12,4 @@ const ProjectCard = ({image, title, subtitle, link}) => {
   )
 }
 
-export default ProjectCard
+export default WorkCard

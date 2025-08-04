@@ -1,7 +1,7 @@
 import { useState } from 'react';
-import logo from "../assets/logo.png"
-import { NAVIGATION_LINKS } from '../constants/data';
-import { FaBars, FaTimes } from 'react-icons/fa';
+import { NAVIGATION_LINKS } from '../constants/navbarData';
+import { FaTimes } from 'react-icons/fa';
+import { FaBars } from 'react-icons/fa6';
 
 const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -34,7 +34,7 @@ const Navbar = () => {
         <div className="flex justify-between gap-6">
           <div>
             <a href="#">
-              <img src={logo} width={90} alt="logo" />
+              <img src='/images/logo.png' width={90} alt="logo" />
             </a>
           </div>
           <div>
@@ -57,7 +57,7 @@ const Navbar = () => {
           <div className="flex items-center justify-between">
             <div>
               <a href="#">
-                <img src={logo}
+                <img src="/images/logo.png"
                 width={90}
                  alt="logo" 
                  className='m-2'

@@ -1,7 +1,6 @@
-import video from "../assets/video.mp4";
-import { FACT } from "../constants/data";
+import { FACT } from "../constants/factShowcaseSectionData";
 
-const FactShowcase = () => {
+const FactShowcaseSection= () => {
   return (
     <div id="fact">
       <h2 className="mb-12 mt-20 text-center text-4xl font-semibold">Fact</h2>
@@ -14,7 +13,7 @@ const FactShowcase = () => {
             loop
             playsInline
           >
-            <source src={video} type="video/mp4" />
+            <source src="/videos/showcase-video.mp4" type="video/mp4" />
           </video>
         </div>
 
@@ -30,4 +29,4 @@ const FactShowcase = () => {
   );
 };
 
-export default FactShowcase;
+export default FactShowcaseSection;

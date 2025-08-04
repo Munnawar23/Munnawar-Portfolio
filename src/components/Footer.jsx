@@ -1,12 +1,20 @@
-import logo from "../assets/logo.png";
-import { SOCIAL_MEDIA_LINKS } from "../constants/data";
+import { SOCIAL_MEDIA_LINKS } from "../constants/footerData";
+import { FaFacebook, FaDiscord, FaInstagram, FaGithub, FaLinkedin } from "react-icons/fa";
+
+const iconMap = {
+  Facebook: <FaFacebook fontSize={25} className="hover:opacity-80" />,
+  Instagram: <FaInstagram fontSize={25} className="hover:opacity-80" />,
+  Discord: <FaDiscord fontSize={25} className="hover:opacity-80" />,
+  GitHub: <FaGithub fontSize={25} className="hover:opacity-80" />,
+  LinkedIn: <FaLinkedin fontSize={25} className="hover:opacity-80" />,
+};
 
 const Footer = () => {
   return (
     <div className="mb-8 mt-20">
       <div className="flex items-center justify-center">
         <figure>
-          <img src={logo} alt="logo" width={200} className="mb-2" />
+          <img src="/images/logo.png" alt="logo" width={200} className="mb-2" />
           <div className="mb-10 h-3 w-12 bg-yellow-400"></div>
         </figure>
       </div>
@@ -19,7 +27,7 @@ const Footer = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            {link.icon}
+            {iconMap[link.name]}
           </a>
         ))}
       </div>
