@@ -1,5 +1,12 @@
 import { SOCIAL_MEDIA_LINKS } from "../constants/footerData";
-import { FaFacebook, FaDiscord, FaInstagram, FaGithub, FaLinkedin } from "react-icons/fa";
+import {
+  FaFacebook,
+  FaDiscord,
+  FaInstagram,
+  FaGithub,
+  FaLinkedin,
+} from "react-icons/fa";
+import { motion } from "framer-motion";
 
 const iconMap = {
   Facebook: <FaFacebook fontSize={25} className="hover:opacity-80" />,
@@ -13,27 +20,34 @@ const Footer = () => {
   return (
     <div className="mb-8 mt-20">
       <div className="flex items-center justify-center">
-        <figure>
+        <motion.figure
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 1.5, delay: 1 }}
+        >
           <img src="/images/logo.png" alt="logo" width={200} className="mb-2" />
           <div className="mb-10 h-3 w-12 bg-yellow-400"></div>
-        </figure>
+        </motion.figure>
       </div>
 
       <div className="flex items-center justify-center gap-8">
         {SOCIAL_MEDIA_LINKS.map((link, index) => (
-          <a
+          <motion.a
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.2, delay: 0.5 * index }}
             key={index}
             href={link.href}
             target="_blank"
             rel="noopener noreferrer"
           >
             {iconMap[link.name]}
-          </a>
+          </motion.a>
         ))}
       </div>
 
       <p className="mt-8 text-center text-sm tracking-wide text-gray-400">
-       &copy; 2025 Munnawar Hussain. All rights reserved.
+        &copy; 2025 Munnawar Hussain. All rights reserved.
       </p>
     </div>
   );

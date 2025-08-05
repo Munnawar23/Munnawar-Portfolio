@@ -1,15 +1,40 @@
 import { TESTIMONIALS } from "../constants/testimonialSectionData";
+import { motion } from "framer-motion";
+
+const containerVarients = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.6,
+    },
+  },
+};
+
+const itemVarients = {
+  hidden: { opacity: 0, y: 20 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
+};
 
 const TestimonialSection = () => {
   return (
-    <div id="testimonials" className="container mx-auto mt-20 py-16 tracking-tighter">
+    <div
+      id="testimonials"
+      className="container mx-auto mt-20 py-16 tracking-tighter"
+    >
       <h2 className="mb-12 text-center text-4xl font-semibold">
         What People Say
       </h2>
-
-      <div className="mx-auto max-w-3xl">
+      <motion.div
+        className="mx-auto max-w-3xl"
+        initial="hidden"
+        whileInView="visible"
+        variants={containerVarients}
+        viewport={{ once: true }}
+      >
         {TESTIMONIALS.map((testimonial, index) => (
-          <div
+          <motion.div
+            variants={itemVarients}
             key={index}
             className="mx-4 mb-8 flex flex-col items-center rounded-lg border border-dotted border-gray-600 p-6 md:flex-row"
           >
@@ -24,9 +49,9 @@ const TestimonialSection = () => {
               <p className="font-bold">{testimonial.name}</p>
               <p className="text-gray-400">{testimonial.title}</p>
             </div>
-          </div>
+          </motion.div>
         ))}
-      </div>
+      </motion.div>
     </div>
   );
 };

@@ -1,7 +1,7 @@
-import { useState } from 'react';
-import { NAVIGATION_LINKS } from '../constants/navbarData';
-import { FaTimes } from 'react-icons/fa';
-import { FaBars } from 'react-icons/fa6';
+import { useState } from "react";
+import { NAVIGATION_LINKS } from "../constants/navbarData";
+import { FaTimes } from "react-icons/fa";
+import { FaBars } from "react-icons/fa6";
 
 const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -20,7 +20,7 @@ const Navbar = () => {
 
       window.scrollTo({
         top: offsetPosition,
-        behavior: 'smooth',
+        behavior: "smooth",
       });
     }
     setIsMobileMenuOpen(false);
@@ -28,45 +28,49 @@ const Navbar = () => {
 
   return (
     <div>
-      <nav className='fixed left-0 right-0 top-4 z-50'>
+      <nav className="fixed left-0 right-0 top-0 sm:top-4 z-50">
         {/* Desktop Menu */}
         <div className="mx-auto hidden max-w-2xl items-center justify-center rounded-lg bg-black/20 py-3 backdrop-blur-lg lg:flex">
-        <div className="flex justify-between gap-6">
-          <div>
-            <a href="#">
-              <img src='/images/logo.png' width={90} alt="logo" />
-            </a>
+          <div className="flex justify-between gap-6">
+            <div>
+              <a href="#">
+                <img src="/images/logo.png" width={90} alt="logo" />
+              </a>
+            </div>
+            <div>
+              <ul className="flex items-center gap-4">
+                {NAVIGATION_LINKS.map((item, index) => (
+                  <li key={index}>
+                    <a
+                      className="text-sm hover:text-yellow-400"
+                      href={item.href}
+                      onClick={(e) => handleLinkClick(e, item.href)}
+                    >
+                      {item.label}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
           </div>
-          <div>
-            <ul className='flex items-center gap-4'>
-              {NAVIGATION_LINKS.map((item, index) => (
-                <li key={index}>
-                  <a className='text-sm hover:text-yellow-400'
-                   href={item.href}
-                   onClick={(e) => handleLinkClick(e, item.href)}>
-                    {item.label}
-                   </a>
-                </li>
-              ))}
-            </ul>
-          </div>
-        </div>
         </div>
         {/* Mobile Menu */}
         <div className="rounded-lg backdrop-blur-md lg:hidden">
           <div className="flex items-center justify-between">
             <div>
               <a href="#">
-                <img src="/images/logo.png"
-                width={90}
-                 alt="logo" 
-                 className='m-2'
-                 />
+                <img
+                  src="/images/logo.png"
+                  width={90}
+                  alt="logo"
+                  className="m-2"
+                />
               </a>
             </div>
-            <div className='flex items-center'>
-              <button className='focus:outline-none lg:hidden'
-              onClick={toggleMobileMenu}
+            <div className="flex items-center">
+              <button
+                className="focus:outline-none lg:hidden"
+                onClick={toggleMobileMenu}
               >
                 {isMobileMenuOpen ? (
                   <FaTimes className="m-2 h-6 w-5" />
@@ -77,17 +81,19 @@ const Navbar = () => {
             </div>
           </div>
           {isMobileMenuOpen && (
-          <ul className='ml-4 mt-4 flex-col gap-4 backdrop-blur-md'>
-            {NAVIGATION_LINKS.map((item, index) => (
-              <li key={index}>
-                <a className='block w-full text-xl font-semibold'
-                 href={item.href}
-                onClick={(e) => handleLinkClick(e, item.href)}>
-                  {item.label}
-                </a>
-              </li>
-            ))} 
-          </ul>
+            <ul className="ml-4 mt-4 flex-col gap-4 backdrop-blur-md">
+              {NAVIGATION_LINKS.map((item, index) => (
+                <li key={index}>
+                  <a
+                    className="block w-full text-xl font-semibold"
+                    href={item.href}
+                    onClick={(e) => handleLinkClick(e, item.href)}
+                  >
+                    {item.label}
+                  </a>
+                </li>
+              ))}
+            </ul>
           )}
         </div>
       </nav>
