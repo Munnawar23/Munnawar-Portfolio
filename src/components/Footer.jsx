@@ -5,6 +5,7 @@ import {
   FaInstagram,
   FaGithub,
   FaLinkedin,
+  FaEnvelope
 } from "react-icons/fa";
 import { motion } from "framer-motion";
 
@@ -14,6 +15,7 @@ const iconMap = {
   Discord: <FaDiscord fontSize={25} className="hover:opacity-80" />,
   GitHub: <FaGithub fontSize={25} className="hover:opacity-80" />,
   LinkedIn: <FaLinkedin fontSize={25} className="hover:opacity-80" />,
+  Email: <FaEnvelope fontSize={25} className="hover:opacity-80" />,
 };
 
 const Footer = () => {

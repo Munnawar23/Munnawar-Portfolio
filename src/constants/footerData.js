@@ -18,5 +18,9 @@ export const SOCIAL_MEDIA_LINKS = [
   {
     name: "LinkedIn",
     href: "https://www.linkedin.com/in/munnawar-hussain-aa544b227/",
-  }
+  },
+  {
+    name: "Email",
+    href: "mailto:munawwarh48@gmail.com",
+  },
 ];
