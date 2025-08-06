@@ -40,8 +40,8 @@ const FactShowcaseSection = () => {
           className="w-full p-4 text-center sm:w-1/2"
         >
           <h2 className="mb-4 text-3xl">{FACT.title}</h2>
-          <span className="mt-4 border-b border-yellow-400 py-2 text-xl font-semibold uppercase text-yellow-400">
-            {FACT.award}
+          <span className="mt-4 border-b border-yellow-400 py-0 sm:py-2 text-xl font-semibold uppercase text-yellow-400">
+            {FACT.text}
           </span>
           <p className="m-4 p-2 italic">{FACT.description}</p>
         </motion.div>
