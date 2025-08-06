@@ -9,7 +9,7 @@ const containerVarients = {
     y: 0,
     transition: {
       duration: 0.5,
-      staggerChildren: 0.4,
+      staggerChildren: 0.6,
     },
   },
 };

@@ -31,7 +31,7 @@ const FactShowcaseSection = () => {
       >
         <motion.div className="w-full p-2 sm:w-1/2" variants={itemVarients}>
           <video className="w-full rounded-lg" autoPlay muted loop playsInline>
-            <source src="/videos/showcase-video.mp4" type="video/mp4" />
+            <source src="/videos/showcase-video.webm" type="video/mp4" />
           </video>
         </motion.div>
 

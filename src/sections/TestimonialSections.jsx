@@ -6,7 +6,7 @@ const containerVarients = {
   visible: {
     opacity: 1,
     transition: {
-      staggerChildren: 0.6,
+      staggerChildren: 0.8,
     },
   },
 };
