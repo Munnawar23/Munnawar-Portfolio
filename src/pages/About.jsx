@@ -1,7 +1,7 @@
-import { ABOUT } from "../constants/aboutSectionData";
+import { ABOUT } from "../constants/index";
 import { motion } from "framer-motion";
 
-const AboutSection = () => {
+const About = () => {
   return (
     <div className="container mx-auto" id="about">
       <motion.h2
@@ -35,4 +35,4 @@ const AboutSection = () => {
   );
 };
 
-export default AboutSection;
+export default About;

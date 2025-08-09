@@ -1,23 +1,23 @@
-import Navbar from './components/Navbar'
-import HeroSection from './sections/HeroSection'
-import AboutSection from './sections/AboutSection'
-import WorkSection from './sections/WorkSection'
-import SkillSection from './sections/SkillSection'
-import FactShowcaseSection from './sections/FactShowcaseSection'
-import TestimonialSection from './sections/TestimonialSections'
-import ContactForm from './components/ContactForm'
-import Footer from './components/Footer'
+import Navbar from './components/layout/Navbar'
+import Home from './pages/Home'
+import About from './pages/About'
+import Work from './pages/Work'
+import Skills from './pages/Skills'
+import FactShowcase from './pages/FactShowcase'
+import Testimonials from './pages/Testimonials'
+import ContactForm from './components/layout/ContactForm'
+import Footer from './components/layout/Footer'
 
 const App = () => {
   return (
     <main className='overflow-x-hidden bg-black tracking-tighter text-gray-200 antialiased smooth-scroll' >
       <Navbar />
-      <HeroSection />
-      <AboutSection />
-      <WorkSection />
-      <SkillSection />
-      <FactShowcaseSection />
-      <TestimonialSection />
+      <Home />
+      <About />
+      <Work />
+      <Skills />
+      <FactShowcase />
+      <Testimonials />
       <ContactForm />
       <Footer />
     </main>

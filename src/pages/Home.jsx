@@ -1,7 +1,7 @@
-import { PROFILE } from "../constants/heroSectionData";
+import { PROFILE } from "../constants/index";
 import { motion } from "framer-motion";
 
-const HeroSection = () => {
+const Home = () => {
   return (
     <>
       <div
@@ -38,4 +38,4 @@ const HeroSection = () => {
   );
 };
 
-export default HeroSection;
+export default Home;

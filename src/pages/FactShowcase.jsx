@@ -1,4 +1,4 @@
-import { FACT } from "../constants/factShowcaseSectionData";
+import { FACT } from "../constants/index";
 import { motion } from "framer-motion";
 
 const containerVarients = {
@@ -18,7 +18,7 @@ const itemVarients = {
   visible: { opacity: 1, x: 0, transition: { duration: 0.5 } },
 };
 
-const FactShowcaseSection = () => {
+const FactShowcase = () => {
   return (
     <div id="fact">
       <h2 className="mb-12 mt-20 text-center text-4xl font-semibold">Fact</h2>
@@ -50,4 +50,4 @@ const FactShowcaseSection = () => {
   );
 };
 
-export default FactShowcaseSection;
+export default FactShowcase;

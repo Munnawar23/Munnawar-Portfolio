@@ -1,4 +1,4 @@
-import { TESTIMONIALS } from "../constants/testimonialSectionData";
+import { TESTIMONIALS } from "../constants/index";
 import { motion } from "framer-motion";
 
 const containerVarients = {
@@ -16,7 +16,7 @@ const itemVarients = {
   visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
 };
 
-const TestimonialSection = () => {
+const Testimonials = () => {
   return (
     <div
       id="testimonials"
@@ -56,4 +56,4 @@ const TestimonialSection = () => {
   );
 };
 
-export default TestimonialSection;
+export default Testimonials;

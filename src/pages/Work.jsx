@@ -1,5 +1,5 @@
-import { WORKS } from "../constants/workSectionData";
-import WorkCard from "../components/WorkCard";
+import { WORKS } from "../constants/index";
+import WorkCard from "../components/common/WorkCard";
 import { motion} from "framer-motion";
 
 const containerVarients = {
@@ -19,7 +19,7 @@ const itemVarients = {
   visible: { opacity: 1, scale: 1, transition: { duration: 0.5 } },
 };
 
-const WorksSection = () => {
+const Works = () => {
   return (
     <div id="works">
       <motion.h2
@@ -53,4 +53,4 @@ const WorksSection = () => {
   );
 };
 
-export default WorksSection;
+export default Works;

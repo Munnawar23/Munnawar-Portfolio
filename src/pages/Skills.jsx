@@ -1,4 +1,4 @@
-import { SKILLS } from "../constants/skillSectionData";
+import { SKILLS } from "../constants/index";
 import { TbBrandNextjs } from "react-icons/tb";
 import { FaNodeJs } from "react-icons/fa";
 import { SiMongodb, SiReact, SiGreensock } from "react-icons/si";
@@ -30,7 +30,7 @@ const iconMap = {
   GSAP: <SiGreensock className="text-4xl lg:text-6xl text-green-300" />,
 };
 
-const SkillsSection = () => {
+const Skills = () => {
   return (
     <div className="container mx-auto" id="skills">
       <h2 className="mb-12 mt-20 text-center text-4xl">Skills</h2>
@@ -61,4 +61,4 @@ const SkillsSection = () => {
   );
 };
 
-export default SkillsSection;
+export default Skills;

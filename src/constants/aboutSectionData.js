@@ -1,4 +1,0 @@
-export const ABOUT = {
-  text1: "I design and build websites and mobile apps that are both efficient and inspiring",
-  text2: "Hello! I'm Munawar Hussain, a MERN stack developer with experience in real-world industry projects and a flair for mobile development. I thrive on crafting web and app experiences that are not only robust and scalable but also intuitive and user-friendly. My passion for clean code ensures that every project is efficient and maintainable. Beyond development, I'm an avid learner who enjoys exploring new cultures and ideas. My curiosity drives me to stay ahead in both technology and design, bringing smart and practical solutions to every challenge. Whether I’m building a mobile app or a complex web system, I am dedicated to delivering quality in every project..",
-};

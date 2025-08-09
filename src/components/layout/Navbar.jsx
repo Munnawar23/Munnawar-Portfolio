@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { NAVIGATION_LINKS } from "../constants/navbarData";
+import { NAVIGATION_LINKS } from "../../constants/index";
 import { FaTimes } from "react-icons/fa";
 import { FaBars } from "react-icons/fa6";
 
