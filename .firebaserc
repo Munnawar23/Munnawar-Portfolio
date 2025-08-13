@@ -1,5 +1,7 @@
 {
   "projects": {
-    "default": "my-portfolio-b09d5"
-  }
+    "default": "munnawar-portfolio"
+  },
+  "targets": {},
+  "etags": {}
 }
