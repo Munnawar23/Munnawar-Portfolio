@@ -1,4 +1,4 @@
-import { TESTIMONIALS } from "../constants/index";
+import { TESTIMONIALS } from "../utils/constants";
 import { motion } from "framer-motion";
 
 const containerVarients = {

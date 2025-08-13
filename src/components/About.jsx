@@ -1,4 +1,4 @@
-import { ABOUT } from "../constants/index";
+import { ABOUT } from "../utils/constants";
 import { motion } from "framer-motion";
 
 const About = () => {

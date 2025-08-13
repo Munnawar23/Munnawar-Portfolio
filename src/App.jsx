@@ -1,12 +1,12 @@
-import Navbar from './components/layout/Navbar'
-import Home from './pages/Home'
-import About from './pages/About'
-import Work from './pages/Work'
-import Skills from './pages/Skills'
-import FactShowcase from './pages/FactShowcase'
-import Testimonials from './pages/Testimonials'
-import ContactForm from './components/layout/ContactForm'
-import Footer from './components/layout/Footer'
+import Navbar from './components/Navbar'
+import Home from './components/Home'
+import About from './components/About'
+import Work from './components/Work'
+import Skills from './components/Skills'
+import FactShowcase from './components/FactShowcase'
+import Testimonials from './components/Testimonials'
+import ContactForm from './components/ContactForm'
+import Footer from './components/Footer'
 
 const App = () => {
   return (

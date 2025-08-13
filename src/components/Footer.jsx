@@ -1,4 +1,4 @@
-import { SOCIAL_MEDIA_LINKS } from "../../constants/index";
+import { SOCIAL_MEDIA_LINKS } from "../utils/constants";
 import {
   FaFacebook,
   FaDiscord,

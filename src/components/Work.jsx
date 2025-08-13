@@ -1,5 +1,5 @@
-import { WORKS } from "../constants/index";
-import WorkCard from "../components/common/WorkCard";
+import { WORKS } from "../utils/constants";
+import WorkCard from "../components/WorkCard";
 import { motion} from "framer-motion";
 
 const containerVarients = {

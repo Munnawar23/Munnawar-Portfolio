@@ -1,4 +1,4 @@
-import { PROFILE } from "../constants/index";
+import { PROFILE } from "../utils/constants";
 import { motion } from "framer-motion";
 
 const Home = () => {

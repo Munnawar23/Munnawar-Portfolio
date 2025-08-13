@@ -1,4 +1,4 @@
-import { SKILLS } from "../constants/index";
+import { SKILLS } from "../utils/constants";
 import { TbBrandNextjs } from "react-icons/tb";
 import { FaNodeJs } from "react-icons/fa";
 import { SiMongodb, SiReact, SiGreensock } from "react-icons/si";

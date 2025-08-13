@@ -1,4 +1,4 @@
-import { FACT } from "../constants/index";
+import { FACT } from "../utils/constants";
 import { motion } from "framer-motion";
 
 const containerVarients = {
