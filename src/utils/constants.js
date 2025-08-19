@@ -79,7 +79,7 @@ export const WORKS = [
     subtitle:
       "A fully animated brand website built with GSAP and smooth transitions throughout.",
     image: "/images/project1.webp",
-    link: "https://chizel-website-49n3.vercel.app/",
+    link: "https://chizel.in/",
   },
   {
     title: "WikDup",
